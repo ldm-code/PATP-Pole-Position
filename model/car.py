@@ -35,6 +35,7 @@ class car(pygame.sprite.Sprite):
                          self.rect.top=0       
                   if self.rect.bottom>750:
                          self.rect.top=0
+                         
           def draw(self,tela):
                 if self.rect.topright>self.spawn:
                   tela.blit(self.surf,self.rect)
