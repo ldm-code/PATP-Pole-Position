@@ -9,7 +9,7 @@ Um projeto desenvolvido no 1º semestre da faculdade por mim e por meu amigo Ric
 - PATP-Pole-Position/
 - ├── .vscode/ ← Configurações do ambiente de desenvolvimento (Visual Studio Code)
 - ├── dados/ ← Pasta onde ficam os dados usados pelo jogo
-- ├── imagens/ ← Imagens utilizadas no jogo (sprites, backgrounds, etc.)
+- ├── imagens/ ← Imagens utilizadas no jogo (sprites, backgrounds, etc.),todas elas feitas pelo meu colega Richarlison
 - ├── model/ ← Modelos ou scripts relacionados à lógica do jogo
 - ├── som/ ← Arquivos de som e efeitos sonoros
 - ├── game_stats.py ← Módulo para registrar e exibir estatísticas do jogo
