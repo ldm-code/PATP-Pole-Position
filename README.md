@@ -3,6 +3,9 @@
 Um projeto desenvolvido no 1º semestre da faculdade por mim e por meu amigo Richarlison Ângelo Ávila, estagiário da Aurora.
 
 ---
+## Tecnologias usadas:
+- Python:
+- Pygame
 
 ## Estrutura do Projeto
 
