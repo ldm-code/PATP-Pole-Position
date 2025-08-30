@@ -10,7 +10,7 @@ Um projeto desenvolvido no 1º semestre da faculdade por mim e por meu amigo Ric
 - ├── .vscode/ ← Configurações do ambiente de desenvolvimento (Visual Studio Code)
 - ├── dados/ ← Pasta onde ficam os dados usados pelo jogo
 - ├── imagens/ ← Imagens utilizadas no jogo (sprites, backgrounds, etc.),todas elas feitas pelo meu colega Richarlison
-- ├── model/ ← Modelos ou scripts relacionados à lógica do jogo
+- ├── model/ ← Modelos ou scripts relacionados à lógica do jogo(car.py,player.py)
 - ├── som/ ← Arquivos de som e efeitos sonoros
 - ├── game_stats.py ← Módulo para registrar e exibir estatísticas do jogo
 - ├── main.py ← Arquivo principal que inicia o jogo
