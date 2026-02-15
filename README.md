@@ -46,3 +46,28 @@ Este projeto é um jogo de corrida com nome de *Pole Position*, desenvolvido com
 
 ---
 
+## Instalacao de dependencias:
+
+```bash
+# clonar repositorio:
+git clone https://github.com/ldm-code/PATP-Pole-Position.git
+cd PATP-Pole-Position
+
+# configurar ambiente:
+
+# no linux/macOS:
+python3 -m venv .venv
+source .venv/bin/activate
+
+# No windows(powershell):
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# instalacao de frameworks:
+pip install pygame
+
+```
+
+---
+
+
