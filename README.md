@@ -69,4 +69,16 @@ pip install pygame
 
 ---
 
+- ## Observacao:
+-  é preciso ter o python 3.13.2 instalado em sua maquina para que assim voce possa executar o arquivo main.py e jogar o jogo,
+
+---
+
+## Controles basicos
+- Selecione a equipe clicando na logo e o piloto clicando no capacete.
+- Para retornar aonde nao tiver um botao de voltar ou sair aperte a tecla esc do teclado.
+- O piloto king e equipe legend sao liberados ao apertar a tecla p do teclado com a loja aberta.
+
+---
+
 
