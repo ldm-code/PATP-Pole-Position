@@ -70,14 +70,35 @@ pip install pygame
 ---
 
 - ## Observacao:
--  é preciso ter o python 3.13.2 instalado em sua maquina para que assim voce possa executar o arquivo main.py e jogar o jogo,
+- É preciso ter o python 3.13.2 instalado em sua maquina para que assim voce possa executar o arquivo main.py e jogar o jogo,
+- Voce pode executar o main.py rodando ele na sua ide ou executando o seguinte comando
+
+
+```bash
+
+# no linux execute:
+python3 main.py
+
+# no windows execute:
+python main.py
+
+
+```
+
 
 ---
 
 ## Controles basicos
-- Selecione a equipe clicando na logo e o piloto clicando no capacete.
-- Para retornar aonde nao tiver um botao de voltar ou sair aperte a tecla esc do teclado.
+
+- **Apos realizar o processo acima em sua maquina e execuatar o main.py,existem alguns controles basicos que devem ser destacados,cada um deles estao listados abaixo**
+- Ao executar o arquivo main.py voce abre o menu de jogador ,e clicando iniciar entra na tela de selecao da partida
+- Ao acessar a tela de selecao de equipe ,selecione a equipe clicando na logo
+- Ao entrar na tela de piloto,selecione seu  piloto clicando no capacete.
+- Para retornar aonde nao tiver nada escrito  voltar ou sair aperte a tecla esc do teclado.
 - O piloto king e equipe legend sao liberados ao apertar a tecla p do teclado com a loja aberta.
+- Voce pode ativar/desativar o som nas configuracoes do jogo
+- Apos finalizar a selecao de equipes e pilotos um contador aparece,apos a contagem de 3 segundos a partida comeca
+
 
 ---
 
