@@ -10,7 +10,6 @@ Um projeto desenvolvido no 1º semestre da faculdade por mim e por meu amigo Ric
 ## Estrutura do Projeto
 
 - PATP-Pole-Position/
-- ├── .vscode/ ← Configurações do ambiente de desenvolvimento (Visual Studio Code)
 - ├── dados/ ← Pasta onde ficam os dados usados pelo jogo
 - ├── imagens/ ← Imagens utilizadas no jogo (sprites, backgrounds, etc.),todas elas feitas pelo meu colega Richarlison
 - ├── model/ ← Modelos ou scripts relacionados à lógica do jogo(car.py,player.py)
@@ -45,4 +44,41 @@ Um projeto desenvolvido no 1º semestre da faculdade por mim e por meu amigo Ric
 Este projeto é um jogo de corrida com nome de *Pole Position*, desenvolvido com meu colega Richarlison Ângelo Ávila, durante o primeiro semestre da faculdade. Nosso objetivo foi aplicar conhecimentos de lógica de programação, manipulação de recursos multimídia (imagens, sons), além de estruturar um código organizado e funcional, completo com estatísticas de desempenho dentro do jogo.
 
 ---
+
+## Instalacao de dependencias:
+
+```bash
+# clonar repositorio:
+git clone https://github.com/ldm-code/PATP-Pole-Position.git
+cd PATP-Pole-Position
+
+# configurar ambiente:
+
+# no linux/macOS:
+python3 -m venv .venv
+source .venv/bin/activate
+
+# No windows(powershell):
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# instalacao de frameworks:
+pip install pygame
+
+```
+
+---
+
+- ## Observacao:
+-  é preciso ter o python 3.13.2 instalado em sua maquina para que assim voce possa executar o arquivo main.py e jogar o jogo,
+
+---
+
+## Controles basicos
+- Selecione a equipe clicando na logo e o piloto clicando no capacete.
+- Para retornar aonde nao tiver um botao de voltar ou sair aperte a tecla esc do teclado.
+- O piloto king e equipe legend sao liberados ao apertar a tecla p do teclado com a loja aberta.
+
+---
+
 
