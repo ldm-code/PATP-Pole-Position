@@ -3,7 +3,7 @@ import random
 from pygame.locals import RLEACCEL
 from settings import LARGURA,ALTURA
 class Player(pygame.sprite.Sprite):
-          def __init__(self,y,driver_name,team_name,image_pilot=None):
+          def __init__(self,driver_name,team_name,image_pilot=None):
                     super (Player,self).__init__()
                     self.driver_name=driver_name
                     self.team_name=team_name
@@ -13,14 +13,15 @@ class Player(pygame.sprite.Sprite):
                     self.surf.set_colorkey((255,255,255),RLEACCEL)
                     self.rect=self.surf.get_rect()
                     self.rect.x=400
-                    self.rect.y=y
+                    self.rect.y=600
                     self.spawn=(self.rect.x,self.rect.y)
           def update(self,pressed_keys):
                   self.speed=random.randint(4,10)
                   if pressed_keys[pygame.K_RIGHT]:
                         self.rect.x+=self.speed
                   if pressed_keys[pygame.K_LEFT]:
-                          self.rect.x-=self.speed                                                   
+                          self.rect.x-=self.speed   
+                                              
                   if self.rect.left<0:
                          self.rect.left=0
                   if self.rect.left>LARGURA:

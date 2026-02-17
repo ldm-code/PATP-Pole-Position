@@ -6,7 +6,7 @@ import requests
 from pygame.locals import MOUSEBUTTONDOWN,KEYDOWN,K_RETURN,K_p,K_ESCAPE,QUIT
 from settings import LARGURA,ALTURA
 from model.player import Player
-from model.car import car
+from model.car import car,CARRO_POS
 from game_stats import MENU,LOJA,JOGANDO,CONFIGURACOES,CREDITOS,PILOTOS,EQUIPES,VITORIA,INICIO,DERROTA,CARREGANDO
 pygame.init()
 pygame.mixer.init()
@@ -379,8 +379,7 @@ def jogar():
      vel_y=20
      pts=0
      ultrapassagem=False
-     y=250
-     player=Player(y,driver_name,team_name,image_pilot)
+     player=Player(driver_name,team_name,image_pilot)
      carro=car()
      all_sprites=pygame.sprite.Group()
      all_sprites.add(player)
@@ -403,6 +402,7 @@ def jogar():
              else:
                   ultrapassagem=False 
           fundo_y+=vel_y
+
           if fundo_y >= ALTURA:
               fundo_y = 0
           tela.blit(fundo_game,(0,fundo_y))
@@ -414,7 +414,7 @@ def jogar():
           for entity in all_sprites:
                tela.blit(entity.surf,entity.rect)
           player.draw(tela)
-          carro.draw(tela)  
+          carro.draw(tela)
           if pygame.sprite.spritecollideany(player,npc):
                player.kill()
                player_criado=0               
@@ -433,7 +433,7 @@ def jogar():
                     json.dump(historico,arq,indent=4)
                
                return DERROTA
-          if pts>=152 and timer_now==10:
+          if pts>=145 and timer_now==10:
                player_criado=0
                jogo={"partida":partida,"piloto":driver_name,"equipe":team_name,"pontos":pts,"resultado":"vitoria"}
                historico.append(jogo)

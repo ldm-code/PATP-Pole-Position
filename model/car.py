@@ -2,15 +2,16 @@ import pygame
 import random 
 from pygame.locals import RLEACCEL
 from settings import LARGURA,ALTURA
-
+pygame.mixer.init()
+CARRO_POS= pygame.USEREVENT + 1
 class car(pygame.sprite.Sprite):
-          def __init__(self):
+          def __init__(self,x=330):
                   super(car,self).__init__()
                   self.surf=pygame.image.load("imagens/Senna.png").convert_alpha()
                   self.surf=pygame.transform.scale(self.surf,(150,150))
                   self.surf.set_colorkey((255,255,255),RLEACCEL)
-                  self.x=330
-                  self.y=0              
+                  self.x=x
+                  self.y=-200              
                   self.spawn=(self.x,self.y)
                   self.rect=self.surf.get_rect(
                           center=(
@@ -34,8 +35,11 @@ class car(pygame.sprite.Sprite):
                   if self.rect.top<=0:
                          self.rect.top=0       
                   if self.rect.bottom>750:
-                         self.rect.top=0
-                         
+                          self.respawn()
+          def respawn(self):
+                   novo_x = random.randint(320, 550)
+                   self.rect.center = (novo_x, -200)
+                   self.spawn=(novo_x,-200)
           def draw(self,tela):
                 if self.rect.topright>self.spawn:
                   tela.blit(self.surf,self.rect)
