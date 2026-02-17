@@ -95,7 +95,7 @@ python main.py
 - Ao executar o arquivo main.py voce abre o menu de jogador ,e clicando iniciar entra na tela de selecao da partida.
 - Ao acessar a tela de selecao de equipe ,selecione a equipe clicando na logo.
 - Ao entrar na tela de piloto,selecione seu  piloto clicando no capacete.
-- Para retornar aonde nao tiver nada escrito  voltar ou sair aperte a tecla esc do teclado.
+- Para para sair de uma tela a outra onde nao tiver nada escrito  voltar ou sair aperte a tecla esc do teclado.
 - O piloto king e equipe legend sao liberados ao apertar a tecla p do teclado com a loja aberta.
 - Voce pode ativar/desativar o som nas configuracoes do jogo.
 - Apos finalizar a selecao de equipes e pilotos um contador aparece,apos a contagem de 3 segundos a partida comeca.
