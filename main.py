@@ -2,6 +2,7 @@ import pygame
 import sys
 import json
 import os
+import requests
 from pygame.locals import MOUSEBUTTONDOWN,KEYDOWN,K_RETURN,K_p,K_ESCAPE,QUIT
 from settings import LARGURA,ALTURA
 from model.player import Player
@@ -78,6 +79,7 @@ def menu_inicial():
                  historico= json.load(arq)
    else:
         historico=[]
+ 
    while True:  
           botao1=desenhar_botao(BRANCO,50,480,200,50)         
           botao2=desenhar_botao(BRANCO,50,350,200,50)     
@@ -420,6 +422,7 @@ def jogar():
                historico.append(jogo)
                with open ("dados/historico.json","w") as arq:
                     json.dump(historico,arq,indent=4)
+               
                return DERROTA
           if barreira.colliderect(player) or barreira2.colliderect(player):
                player.kill()
@@ -428,6 +431,7 @@ def jogar():
                historico.append(jogo)
                with open ("dados/historico.json","w") as arq:
                     json.dump(historico,arq,indent=4)
+               
                return DERROTA
           if pts>=152 and timer_now==10:
                player_criado=0
@@ -435,6 +439,7 @@ def jogar():
                historico.append(jogo)
                with open ("dados/historico.json","w") as arq:
                     json.dump(historico,arq,indent=4)
+               
                return VITORIA
           elif pts<152 and timer_now==10:
                player_criado=0
@@ -442,6 +447,7 @@ def jogar():
                historico.append(jogo)
                with open ("dados/historico.json","w") as arq:
                     json.dump(historico,arq,indent=4)
+              
                return DERROTA
           pygame.display.flip()
           clock.tick(60)
