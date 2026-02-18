@@ -45,6 +45,12 @@ Este projeto é um jogo de corrida com nome de *Pole Position*, desenvolvido com
 
 ---
 
+## Melhorias recentes:
+
+- Adicao de de um spawn aleatorio no carro adversario.
+- Ajuste de eixo y do carro adversaio,permitindo que o player consiga desviar melhor
+- Ajuste na posicao do player e logica de vitoria para jogo mais justo e divertido
+
 ## Instalacao de dependencias:
 
 ```bash
